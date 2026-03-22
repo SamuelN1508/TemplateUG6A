@@ -12,8 +12,9 @@ import java.util.List;
 
 /*
  * ========================================================================
- * PETUNJUK PENGERJAAN (BERLAKU UNTUK SETIAP METHOD)
+ *              PETUNJUK PENGERJAAN (BERLAKU UNTUK SETIAP METHOD)
  * ========================================================================
+ *              TODO : LENGKAPILAH SETIAP METHOD YANG KOSONG
  * TODO 1: Siapkan Query SQL.
  * TODO 2: Buka koneksi database dan siapkan PreparedStatement. Gunakan prepareStatement(query)
  * TODO 3: Lakukan parameter binding (isi nilai tanda '?'). Gunakan setString() / setInt()
