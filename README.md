@@ -58,9 +58,20 @@ Tabel `rekam_medis` (Menyimpan riwayat diagnosis)
 ---
 
 **Cara Mengerjakan:**
-1. Isi method method kosong dalam managers (user manager, rekammedis manager)
-2. Lengkapilah db connection manager sehingga bisa
-3. Jalankan (*Run*) file `MentalAsylumTest.java` untuk memulai penilaian sistem secara otomatis.
+
+Tugas Anda adalah melengkapi logika Database Connectivity (JDBC) pada kelas-kelas Manager yang telah disediakan. Pastikan Anda menggunakan blok try-with-resources dan mencegah SQL Injection.
+
+1. Class UserManager
+   - Lengkapilah Method Login (authenticateUser)
+   - Lengkapilah Method Registrasi (registerUser)
+   - Lengkapilah Method Mencari Users Sesuai Role (getUserByRole)
+2. Class UserManager
+   - Lengkapilah Method Tambah (tambahRekamMedis) — CREATE
+   - Lengkapilah Method Cari (cariRekamMedisPasien dan getAllRekamMedis) — READ
+   - Lengkapilah Method Edit (editRekamMedis) — UPDATE
+   - Lengkapilah Method Hapus (hapusRekamMedisPasien) — DELETE
+3. Class DBConnectionManager
+   - Lengkapilah Class DBConnectionManager sehingga koneksi ke database SQLite dapat tersambung dengan baik dan dapat digunakan oleh seluruh Manager.
 ---
 
 ![alt text](LoginBerhasil.png?raw=true)
