@@ -43,8 +43,7 @@ Tabel `rekam_medis` (Menyimpan riwayat diagnosis)
 2. **Lihat Daftar Dokter:** Menampilkan kontak dokter yang tersedia.
 
 **C. Role Guest (Akses Publik / Tanpa Login)**
-1. **Lihat Daftar Dokter:** Menampilkan informasi dokter yang praktik.
-2. **Cek Keberadaan Pasien:** Melakukan pencarian untuk mengetahui status rawat pasien, dengan menyembunyikan detail diagnosis penyakitnya.
+1. **Cek Keberadaan Pasien:** Melakukan pencarian untuk mengetahui status rawat pasien, dengan menyembunyikan detail diagnosis penyakitnya.
 
 ## 4. Pengujian Sistem (Unit Testing)
 **Skenario Pengujian (Total 100 Poin):**
@@ -58,6 +57,22 @@ Tabel `rekam_medis` (Menyimpan riwayat diagnosis)
 2. Jalankan (*Run*) file `MentalAsylumTest.java` untuk memulai penilaian sistem secara otomatis.
 ---
 
-![alt text](LoginDokter.png?raw=true)
-![alt text](LoginPasien.png?raw=true)
-![alt text](SalahLogin.png?raw=true)
+**Cara Mengerjakan:**
+
+Tugas Anda adalah melengkapi logika Database Connectivity (JDBC) pada kelas-kelas Manager yang telah disediakan. Pastikan Anda menggunakan blok try-with-resources dan mencegah SQL Injection.
+
+1. Class UserManager
+   - Lengkapilah Method Login (authenticateUser)
+   - Lengkapilah Method Registrasi (registerUser)
+   - Lengkapilah Method Mencari Users Sesuai Role (getUserByRole)
+2. Class RekamMedisManager
+   - Lengkapilah Method Tambah (tambahRekamMedis) — CREATE
+   - Lengkapilah Method Cari (cariRekamMedisPasien dan getAllRekamMedis) — READ
+   - Lengkapilah Method Edit (editRekamMedis) — UPDATE
+   - Lengkapilah Method Hapus (hapusRekamMedisPasien) — DELETE
+3. Class DBConnectionManager
+   - Lengkapilah Class DBConnectionManager sehingga koneksi ke database SQLite dapat tersambung dengan baik dan dapat digunakan oleh seluruh Manager.
+---
+
+![alt text](LoginBerhasil.png?raw=true)
+![alt text](LoginGagal.png?raw=true)
