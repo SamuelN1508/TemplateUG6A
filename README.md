@@ -65,7 +65,7 @@ Tugas Anda adalah melengkapi logika Database Connectivity (JDBC) pada kelas-kela
    - Lengkapilah Method Login (authenticateUser)
    - Lengkapilah Method Registrasi (registerUser)
    - Lengkapilah Method Mencari Users Sesuai Role (getUserByRole)
-2. Class UserManager
+2. Class RekamMedisManager
    - Lengkapilah Method Tambah (tambahRekamMedis) — CREATE
    - Lengkapilah Method Cari (cariRekamMedisPasien dan getAllRekamMedis) — READ
    - Lengkapilah Method Edit (editRekamMedis) — UPDATE
