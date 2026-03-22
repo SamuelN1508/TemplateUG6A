@@ -43,8 +43,7 @@ Tabel `rekam_medis` (Menyimpan riwayat diagnosis)
 2. **Lihat Daftar Dokter:** Menampilkan kontak dokter yang tersedia.
 
 **C. Role Guest (Akses Publik / Tanpa Login)**
-1. **Lihat Daftar Dokter:** Menampilkan informasi dokter yang praktik.
-2. **Cek Keberadaan Pasien:** Melakukan pencarian untuk mengetahui status rawat pasien, dengan menyembunyikan detail diagnosis penyakitnya.
+1. **Cek Keberadaan Pasien:** Melakukan pencarian untuk mengetahui status rawat pasien, dengan menyembunyikan detail diagnosis penyakitnya.
 
 ## 4. Pengujian Sistem (Unit Testing)
 **Skenario Pengujian (Total 100 Poin):**
@@ -56,6 +55,12 @@ Tabel `rekam_medis` (Menyimpan riwayat diagnosis)
 **Cara Menjalankan:**
 1. Jalankan (*Run*) file `AsylumSystem.java` untuk memulai aplikasi berbasis interaksi *Scanner*.
 2. Jalankan (*Run*) file `MentalAsylumTest.java` untuk memulai penilaian sistem secara otomatis.
+---
+
+**Cara Mengerjakan:**
+1. Isi method method kosong dalam managers (user manager, rekammedis manager)
+2. Lengkapilah db connection manager sehingga bisa
+3. Jalankan (*Run*) file `MentalAsylumTest.java` untuk memulai penilaian sistem secara otomatis.
 ---
 
 ![alt text](LoginBerhasil.png?raw=true)
