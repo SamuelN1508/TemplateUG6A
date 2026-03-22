@@ -39,9 +39,8 @@ Tabel `rekam_medis` (Menyimpan riwayat diagnosis)
 5. **Lihat & Cari Pasien:** Menarik seluruh data atau mencari spesifik rekam medis (`READ`).
 
 **B. Role Pasien (Akses Terbatas)**
-1. **Update Profil:** Mengubah *username*, *password*, dan *email* pribadi.
-2. **Lihat Riwayat Sendiri:** Hanya dapat melihat rekam medis yang namanya cocok dengan akunnya demi privasi.
-3. **Lihat Daftar Dokter:** Menampilkan kontak dokter yang tersedia.
+1. **Lihat Riwayat Sendiri:** Hanya dapat melihat rekam medis yang namanya cocok dengan akunnya demi privasi.
+2. **Lihat Daftar Dokter:** Menampilkan kontak dokter yang tersedia.
 
 **C. Role Guest (Akses Publik / Tanpa Login)**
 1. **Lihat Daftar Dokter:** Menampilkan informasi dokter yang praktik.
