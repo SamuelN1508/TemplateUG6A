@@ -58,6 +58,5 @@ Tabel `rekam_medis` (Menyimpan riwayat diagnosis)
 2. Jalankan (*Run*) file `MentalAsylumTest.java` untuk memulai penilaian sistem secara otomatis.
 ---
 
-![alt text](LoginDokter.png?raw=true)
-![alt text](LoginPasien.png?raw=true)
-![alt text](SalahLogin.png?raw=true)
+![alt text](LoginBerhasil.png?raw=true)
+![alt text](LoginGagal.png?raw=true)
