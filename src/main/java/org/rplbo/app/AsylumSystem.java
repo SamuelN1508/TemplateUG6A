@@ -260,9 +260,8 @@ public class AsylumSystem {
         boolean back = false;
         while (!back) {
             System.out.println("\n=== MENU PASIEN: " + pasien + " ===");
-            System.out.println("1. Update Profile (Edit DB)");
-            System.out.println("2. Lihat Riwayat Rekam Medis Saya (Read)");
-            System.out.println("3. Lihat List Dokter (Read)");
+            System.out.println("1. Lihat Riwayat Rekam Medis Saya (Read)");
+            System.out.println("2. Lihat List Dokter (Read)");
             System.out.println("0. Logout");
             System.out.print("Pilih: ");
 
@@ -271,12 +270,9 @@ public class AsylumSystem {
 
             switch (choice) {
                 case 1:
-                    updateProfilSaya(scanner, pasien);
-                    break;
-                case 2:
                     lihatRiwayatSendiri(pasien);
                     break;
-                case 3:
+                case 2:
                     lihatDaftarDokter();
                     break;
                 case 0:
@@ -284,44 +280,6 @@ public class AsylumSystem {
                     break;
                 default: System.out.println("Pilihan tidak valid.");
             }
-        }
-    }
-
-    // Mengambil daftar user dengan role 'dokter' dari UserManager dan menampilkannya ke layar
-    private void lihatDaftarDokter() {
-        System.out.println("\n=== DAFTAR DOKTER MENTAL ASYLUM ===");
-
-        List<User> daftarDokter = userManager.getUsersByRole("dokter");
-
-        if (daftarDokter.isEmpty()) {
-            System.out.println("Belum ada data dokter terdaftar.");
-        } else {
-            for (int i = 0; i < daftarDokter.size(); i++) {
-                User dokter = daftarDokter.get(i);
-                System.out.println((i + 1) + ". dr. " + dokter.getUsername() + " | Kontak: " + dokter.getEmail());
-            }
-        }
-    }
-
-    // Meminta data profil baru, memanggil method update di UserManager, dan memaksa logout jika sukses
-    private void updateProfilSaya(Scanner scanner, String usernameLama) {
-        System.out.println("\n=== UPDATE PROFIL AKUN ===");
-        System.out.println("Silakan masukkan data baru untuk akun Anda (" + usernameLama + ").");
-
-        System.out.print("Masukkan Username Baru : ");
-        String newUsername = scanner.nextLine();
-
-        System.out.print("Masukkan Password Baru : ");
-        String newPassword = scanner.nextLine();
-
-        System.out.print("Masukkan Email Baru    : ");
-        String newEmail = scanner.nextLine();
-
-        if (userManager.updateUserProfile(usernameLama, newUsername, newPassword, newEmail)) {
-            System.out.println("Sukses! Profil Anda berhasil diperbarui.");
-            System.out.println("PENTING: Silakan login ulang menggunakan username dan password baru Anda.");
-        } else {
-            System.out.println("Gagal memperbarui profil. Mungkin username baru sudah dipakai orang lain.");
         }
     }
 
@@ -349,6 +307,23 @@ public class AsylumSystem {
         }
     }
 
+
+    // Mengambil daftar user dengan role 'dokter' dari UserManager dan menampilkannya ke layar
+    private void lihatDaftarDokter() {
+        System.out.println("\n=== DAFTAR DOKTER MENTAL ASYLUM ===");
+
+        List<User> daftarDokter = userManager.getUsersByRole("dokter");
+
+        if (daftarDokter.isEmpty()) {
+            System.out.println("Belum ada data dokter terdaftar.");
+        } else {
+            for (int i = 0; i < daftarDokter.size(); i++) {
+                User dokter = daftarDokter.get(i);
+                System.out.println((i + 1) + ". dr. " + dokter.getUsername() + " | Kontak: " + dokter.getEmail());
+            }
+        }
+    }
+
     // ==========================================
     // MENU LEVEL 3: GUEST (TANPA LOGIN)
     // ==========================================
@@ -358,8 +333,7 @@ public class AsylumSystem {
         boolean back = false;
         while (!back) {
             System.out.println("\n=== MENU GUEST (PUBLIK) ===");
-            System.out.println("1. Lihat Daftar Dokter");
-            System.out.println("2. Cek Keberadaan Pasien");
+            System.out.println("1. Cek Keberadaan Pasien");
             System.out.println("0. Kembali ke Menu Utama");
             System.out.print("Pilih: ");
 
@@ -368,9 +342,6 @@ public class AsylumSystem {
 
             switch (choice) {
                 case 1:
-                    lihatDaftarDokter();
-                    break;
-                case 2:
                     cekKeberadaanPasien(scanner);
                     break;
                 case 0:
