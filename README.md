@@ -76,3 +76,7 @@ Tugas Anda adalah melengkapi logika Database Connectivity (JDBC) pada kelas-kela
 
 ![alt text](LoginBerhasil.png?raw=true)
 ![alt text](LoginGagal.png?raw=true)
+
+> [!CAUTION]
+> # 🛑 PERHATIAN
+> ### HANYA BOLEH MENGUBAH CLASS MANAGERS (USERMANAGER, REKAMMEDISMANAGER DAN DBCONNECTIONMANAGER)
