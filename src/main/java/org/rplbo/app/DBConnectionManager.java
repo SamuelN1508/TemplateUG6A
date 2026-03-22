@@ -7,7 +7,8 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class DBConnectionManager {
-    private static final String DB_URL = "jdbc:sqlite:Asylum.db";
+    // TODO 1 : CONNECT KE DATABASE (Masukan Path DB)
+    private static final String DB_URL = "";
     private static Connection connection;
 
     private DBConnectionManager() {
@@ -17,11 +18,13 @@ public class DBConnectionManager {
     public static Connection getConnection() {
         try {
             if (connection == null || connection.isClosed()) {
-                connection = DriverManager.getConnection(DB_URL);
+                // TODO 2 : getConnection jika connection null/closed (gunakan DriverManager.getConnection)
+                connection = null;
             }
         } catch (SQLException e) {
             e.printStackTrace();
         }
+        // Return connection
         return connection;
     }
 

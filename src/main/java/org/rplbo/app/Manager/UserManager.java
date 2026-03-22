@@ -11,14 +11,15 @@ import java.util.List;
 
 /*
  * ========================================================================
- * PETUNJUK PENGERJAAN (BERLAKU UNTUK SETIAP METHOD)
+ *              PETUNJUK PENGERJAAN (BERLAKU UNTUK SETIAP METHOD)
  * ========================================================================
+ *              TODO : LENGKAPILAH SETIAP METHOD YANG KOSONG
  * TODO 1: Siapkan Query SQL.
- * TODO 2: Buka koneksi database dan siapkan PreparedStatement.
- * TODO 3: Lakukan parameter binding (isi nilai tanda '?').
- * TODO 4: Eksekusi query ke dalam database.
- * TODO 5: Evaluasi dan olah hasil eksekusi.
- * TODO 6: Tangkap exception (SQLException) jika terjadi kegagalan database.
+ * TODO 2: Buka koneksi database dan siapkan PreparedStatement. Gunakan prepareStatement(query)
+ * TODO 3: Lakukan parameter binding (isi nilai tanda '?'). Gunakan setString() / setInt()
+ * TODO 4: Eksekusi query ke dalam database. Gunakan executeQuery()
+ * TODO 5: Evaluasi dan olah hasil eksekusi. Gunakan next()
+ * TODO 6: Tangkap exception (SQLException) jika terjadi kegagalan database. (try catch (SQLException e))
  *
  * HINT ATURAN EMAS:
  * - Gunakan stmt.executeUpdate() jika merubah isi tabel (INSERT, UPDATE, DELETE).
@@ -43,6 +44,7 @@ public class UserManager {
     public UserManager() {
     }
 
+    // TODO LENGKAPILAH SETIAP METHOD YANG KOSONG DIBAWAH INI
     // --- METHOD CARI USER SESUAI ROLE ---
     public List<User> getUsersByRole(String role) {
         List<User> userList = new ArrayList<>();
